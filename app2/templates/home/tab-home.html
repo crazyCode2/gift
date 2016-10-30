@@ -1,0 +1,21 @@
+<ion-view title="同舟速运">
+	<ion-nav-buttons  side="left">
+        <button class="button button-clear button-light ">
+            <i class="icon ion-chatbubbles light"></i>
+        </button>
+   </ion-nav-buttons >
+    <ion-nav-buttons side="right">
+        <button class="button button-positive button-clear">
+       	<i class="icon ion-ios-search-strong light"></i>
+        </button>
+    </ion-nav-buttons >
+    
+    <ion-content class="padding" id="home">
+    	<!-- 轮播图 -->
+		<ion-slide-box delegate-handle="slideBox" class="slideContent" auto-play="true" slide-interval="2000" >
+	        <ion-slide ng-repeat="item in banners">
+	            <img src="{{item}}" alt="" />
+	        </ion-slide>
+	   	</ion-slide-box>
+    </ion-content>
+</ion-view>

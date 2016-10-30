@@ -1,0 +1,17 @@
+<ion-view view-title="注册2/3">
+    <ion-content class="has-header">
+        <form name="myForm" novalidate>
+            <div class="list">
+                <div class="item item-input">
+                    <span class="input-label">密码:</span>
+                    <input type="password" placeholder="6-20位数字" name="password" ng-minlength="6" ng-maxlength="20" ng-model="formUser.password" required>
+                </div>
+                <div class="item item-input">
+                	<span class="input-label">确认密码:</span>
+                    <input type="password" placeholder="6-20位数字" name="rePassword" ng-minlength="6" ng-maxlength="20" ng-model="formUser.rePassword" required>
+                </div>            
+            </div>
+            <input  class="button  button-block button-small button-positive next" type="submit"  value="下一步，推荐人" ui-sref="register3"/>
+      	</form>
+    </ion-content>
+</ion-view>
